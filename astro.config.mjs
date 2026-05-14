@@ -2,6 +2,13 @@
 import { defineConfig } from "astro/config";
 
 import nekoweb from "@indiefellas/astro-adapter-nekoweb";
+require("dotenv").config();
 
 // https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  adapter: nekoweb({
+    apiKey: process.env.NEKOWEB_API_KEY ?? "",
+    siteName: "mymetype",
+    domain: "mymetype.nekoweb.org",
+  }),
+});
