@@ -16,8 +16,11 @@ Build and upload to Nekoweb (requires .env file with your API key in `NEKOWEB_AP
 
 `bun run build`
 
-## List of tools and platforms used
+## List of software and platforms used
 
 - [Astro](https://astro.build/)
+- [astro-adapter-nekoweb](https://github.com/indiefellas/astro-adapter-nekoweb)
+- [dotenv](https://www.npmjs.com/package/dotenv)
 - [Nekoweb](https://nekoweb.org/)
 - [Stylus](https://stylus-lang.com/)
+- [TypeScript](https://www.typescriptlang.org)
