@@ -1,4 +1,4 @@
-# mymety.pe
+# MymeType's website
 
 TODO: Fully finish README
 
@@ -6,15 +6,15 @@ TODO: Fully finish README
 
 Install dependencies:
 
-`npm install`
+`bun install`
 
 Run dev server:
 
-`npm run dev`
+`bun run dev`
 
 Build and upload to Nekoweb (requires .env file with your API key in `NEKOWEB_API_KEY`):
 
-`npm run build`
+`bun run build`
 
 ## List of tools and platforms used
 
