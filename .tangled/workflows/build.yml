@@ -1,0 +1,15 @@
+when:
+  - event: ["push", "manual"]
+    branch: ["main"]
+engine: "nixery"
+
+clone:
+  depth: 1
+
+dependencies:
+  nixpkgs:
+    - bun
+
+steps:
+  - name: "Build and deploy website"
+    command: "bun run build"
