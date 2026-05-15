@@ -11,5 +11,7 @@ dependencies:
     - bun
 
 steps:
+  - name: "Install dependencies"
+    command: "bun install"
   - name: "Build and deploy website"
     command: "bun run build"
