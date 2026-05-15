@@ -12,7 +12,7 @@ Run dev server:
 
 `bun run dev`
 
-Build and upload to Nekoweb (requires .env file with your API key in `NEKOWEB_API_KEY`):
+Build and upload to Nekoweb (requires your API key in the `NEKOWEB_API_KEY` environment variable):
 
 `bun run build`
 
@@ -23,4 +23,5 @@ Build and upload to Nekoweb (requires .env file with your API key in `NEKOWEB_AP
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [Nekoweb](https://nekoweb.org/)
 - [Stylus](https://stylus-lang.com/)
+- [Tangled spindles](https://docs.tangled.org/spindles)
 - [TypeScript](https://www.typescriptlang.org)
