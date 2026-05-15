@@ -6,6 +6,10 @@ engine: "nixery"
 clone:
   depth: 1
 
+dependencies:
+  nixpkgs:
+    - bun
+
 steps:
   - name: "Install dependencies"
     command: "bun install"
