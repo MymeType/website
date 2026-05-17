@@ -1,4 +1,20 @@
+/* Spleen (c) 2018-2026 Frederic Cambus licensed under BSD 2 Clause License */
+@font-face
+  font-family Spleen
+  src url(spleen-6x12.woff2)
+  src url(spleen-8x16.woff2)
+  src url(spleen-12x24.woff2)
+  src url(spleen-16x32.woff2)
+  src url(spleen-32x64.woff2)
+
 body
   background-color #282828
   color #b6b6b6
   text-align center
+  font-family Spleen
+  /*
+  The following two properties to disable font smoothing only work on WebKit and
+  Gecko on macOS
+  */
+  -webkit-font-smoothing none
+  -moz-osx-font-smoothing grayscale
