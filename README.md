@@ -6,15 +6,15 @@ TODO: Fully finish README
 
 Install dependencies:
 
-`bun install`
+`npm install`
 
 Run dev server:
 
-`bun run dev`
+`npm run dev`
 
 Build and upload to Nekoweb (requires your API key in the `NEKOWEB_API_KEY` environment variable):
 
-`bun run build`
+`npm run build`
 
 ## List of software and platforms used
 
