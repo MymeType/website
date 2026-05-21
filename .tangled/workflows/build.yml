@@ -9,9 +9,12 @@ clone:
 dependencies:
   nixpkgs:
     - nodejs
+    - copyparty
 
 steps:
   - name: "Install dependencies"
     command: "npm install"
-  - name: "Build and deploy website"
+  - name: "Build and deploy to Nekoweb"
     command: "npm run build"
+  - name: "Upload via copyparty"
+    command: "u2c -a $COPYPARTY_DEPLOY_KEY --dr https://copyparty-caddy.textht.ml ./dist"
