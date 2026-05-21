@@ -8,7 +8,7 @@ clone:
 
 dependencies:
   nixpkgs:
-    - npm
+    - nodejs
 
 steps:
   - name: "Install dependencies"
