@@ -8,10 +8,10 @@ clone:
 
 dependencies:
   nixpkgs:
-    - bun
+    - npm
 
 steps:
   - name: "Install dependencies"
-    command: "bun install"
+    command: "npm install"
   - name: "Build and deploy website"
-    command: "bun run build"
+    command: "npm run build"
