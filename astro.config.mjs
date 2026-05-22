@@ -12,4 +12,10 @@ export default defineConfig({
     siteName: "mymetype",
     domain: "mymetype.nekoweb.org",
   }),
+  prefetch: {
+    prefetchAll: true,
+  },
+  experimental: {
+    clientPrerender: true,
+  },
 });
