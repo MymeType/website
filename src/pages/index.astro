@@ -1,7 +1,8 @@
 ---
 import Base from "../layouts/base.astro";
 import { Image } from "astro:assets";
-import { prefetch } from "astro:prefetch";
+import paraboyButton from "../images/paraboy-button.png";
+import blockbusterButton from "../images/blockbuster-button.gif";
 ---
 
 <Base title="MYMETYPE | マイムタイプ | /maɪmtaɪp/">
@@ -80,7 +81,7 @@ import { prefetch } from "astro:prefetch";
   <a href="https://nekoweb.org/">
     <!-- button by exund -->
     <Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://nekoweb.org/assets/buttons/button3.gif"
@@ -89,7 +90,7 @@ import { prefetch } from "astro:prefetch";
   </a>
   <a href="https://spax.zone/">
     <Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://spax.zone/buttons/spaxdotzone.gif"
@@ -98,7 +99,7 @@ import { prefetch } from "astro:prefetch";
   </a>
   <a href="https://mishamallow.neocities.org">
     <Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://mishamallow.neocities.org/buttons/mishamallow_1.gif"
@@ -107,7 +108,7 @@ import { prefetch } from "astro:prefetch";
   </a>
   <a href="https://flcl.moe/">
     <Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://flcl.moe/Buttons/kabebutton.gif"
@@ -116,7 +117,7 @@ import { prefetch } from "astro:prefetch";
   </a>
   <a href="https://nomaakip.xyz"
     ><Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://nomaakip.xyz/img/buttons/button2.png"
@@ -125,7 +126,7 @@ import { prefetch } from "astro:prefetch";
   </a>
   <a href="https://toasty.place"
     ><Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://toasty.place/images/buttons/sitebuttonn1.gif"
@@ -134,7 +135,7 @@ import { prefetch } from "astro:prefetch";
   </a>
   <a href="https://archi.moe"
     ><Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://archi.moe/images/button.png"
@@ -143,7 +144,7 @@ import { prefetch } from "astro:prefetch";
   </a>
   <a href="https://lucastheguy.nekoweb.org/"
     ><Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://lucastheguy.nekoweb.org/images/button.gif"
@@ -152,7 +153,7 @@ import { prefetch } from "astro:prefetch";
   </a>
   <a href="https://jbc.lol"
     ><Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://jbc.lol/sitebutton3.png"
@@ -161,7 +162,7 @@ import { prefetch } from "astro:prefetch";
   >
   <a href="https://not.itg"
     ><Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://spax.zone/buttons/notitg.png"
@@ -170,7 +171,7 @@ import { prefetch } from "astro:prefetch";
   </a>
   <a href="https://tangled.org/textht.ml/website"
     ><Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://spax.zone/buttons/paws.png"
@@ -179,7 +180,7 @@ import { prefetch } from "astro:prefetch";
   >
   <a href="https://spzi.net"
     ><Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://spax.zone/buttons/spzidotnet.png"
@@ -188,7 +189,7 @@ import { prefetch } from "astro:prefetch";
   </a>
   <a href="https://fluxer.app"
     ><Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://spax.zone/buttons/fluxer.webp"
@@ -197,7 +198,7 @@ import { prefetch } from "astro:prefetch";
   </a>
   <a href="https://en.wikipedia.org/wiki/Non-binary"
     ><Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://spax.zone/buttons/nonbinary.gif"
@@ -206,7 +207,7 @@ import { prefetch } from "astro:prefetch";
   </a>
   <a href="https://en.wikipedia.org/wiki/Transgender_rights_movement"
     ><Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://spax.zone/buttons/trans88x31.png"
@@ -215,7 +216,7 @@ import { prefetch } from "astro:prefetch";
   </a>
   <a href="https://ivrry.nekoweb.org"
     ><Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
       src="https://ivrry.nekoweb.org/assets/images/button.png"
@@ -224,28 +225,19 @@ import { prefetch } from "astro:prefetch";
   </a>
   <a href="https://lgbtqia.wiki/wiki/Paraboy"
     ><Image
-      class="image"
+      loading={"eager"}
       width={88}
       height={31}
-      src="/src/images/paraboy-button.png"
+      src={paraboyButton}
       alt="Paraboy"
     />
   </a>
   <Image
-    class="image"
+    loading={"eager"}
     width={88}
     height={31}
-    src="/src/images/blockbuster-button.gif"
+    src={blockbusterButton}
     alt="Blockbuster"
   />
   <br />
-  <script>
-    import { prefetch } from "astro:prefetch";
-
-    // i frankly do not know what the fuck this does i just copied it from the astro docs and edited it
-    const image = document.getElementsByClassName("image");
-    image.forEach((link: { getAttribute: (arg0: string) => string }) =>
-      prefetch(link.getAttribute("src"), { eagerness: "eager" }),
-    );
-  </script>
 </Base>
