@@ -1,5 +1,10 @@
 # MymeType's website
 
+## Where to access
+
+- [Nekoweb](https://mymetype.nekoweb.org) (more stable)
+- [Self-hosted Caddy server](https://textht.ml) (newer, run on a best-effort basis)
+
 ## Development guide
 
 Install dependencies:
