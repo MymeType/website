@@ -3,7 +3,7 @@
 ## Where to access
 
 - [Nekoweb](https://mymetype.nekoweb.org) (more stable)
-- [Self-hosted Caddy server](https://textht.ml) (newer, run on a best-effort basis)
+- [Self-hosted Caddy server](https://caddy.textht.ml) (backup, run on a best-effort basis)
 
 ## Development guide
 
