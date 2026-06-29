@@ -2,8 +2,8 @@
 
 ## Where to access
 
-- [Nekoweb](https://mymetype.nekoweb.org) (more stable)
-- [Self-hosted Caddy server](https://caddy.textht.ml) (backup, run on a best-effort basis)
+- [Nekoweb](https://mymetype.nekoweb.org)
+- [Custom domain (redirects to Nekoweb)](https://textht.ml)
 
 ## Development guide
 
