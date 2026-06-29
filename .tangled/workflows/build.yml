@@ -11,7 +11,6 @@ clone:
 dependencies:
   nixpkgs:
     - nodejs
-    - copyparty
 
 steps:
   - name: "Install dependencies"
