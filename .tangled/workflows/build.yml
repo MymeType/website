@@ -1,7 +1,9 @@
 when:
   - event: ["push", "manual"]
     branch: ["main"]
+
 engine: "microvm"
+image: "nixos"
 
 clone:
   depth: 1
