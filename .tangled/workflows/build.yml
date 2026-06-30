@@ -2,8 +2,7 @@ when:
   - event: ["push", "manual"]
     branch: ["main"]
 
-engine: "microvm"
-image: "nixos"
+engine: "nixery"
 
 clone:
   depth: 1
@@ -11,12 +10,6 @@ clone:
 dependencies:
   nixpkgs:
     - nodejs
-
-registry:
-  nixpkgs: github:nixos/nixpkgs/nixos-unstable
-
-caches:
-  https://nix-community.cachix.org: "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
 
 steps:
   - name: "Install dependencies"
