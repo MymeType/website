@@ -13,9 +13,9 @@
   "dependencies": {
     "@indiefellas/astro-adapter-nekoweb": "^3.7.1",
     "@types/node": "^25.8.0",
-    "astro": "^7.0.3",
+    "astro": "^7.2.8",
     "dotenv": "^17.4.2",
-    "sharp": "^0.34.5",
+    "sharp": "^0.35.4",
     "stylus": "^0.64.0",
     "typescript": "^5.9.3"
   },
